@@ -35,26 +35,27 @@
     <!-- header part start  -->
     <header class="md:container md:mx-auto">
         <!-- navbar  -->
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="flex-1  ">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
+        <nav class="p-0 m-0">
+            <div class="navbar bg-base-100 bg-primary-color mb-0 md:bg-transparent">
+                <div class="md:flex-1 ml-auto ">
+                    <div class="dropdown ">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden  ">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            class="menu menu-sm dropdown-content  bg-base-100 rounded-md z-[1] mt-2 w-52 p-3 shadow flex flex-col items-center absolute right-auto transform -translate-x-[120%] ">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">Shop</a></li>
                             <li><a href="#">News</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
+
                     </div>
-                    <a class=" font-bold text-4xl font-poppins text-dark-1" href="#">Bike Dekho</a>
+                    <a class=" font-bold text-4xl font-poppins text-dark-1 hidden lg:block" href="#">Bike Dekho</a>
                 </div>
                 <div class=" hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -65,27 +66,29 @@
                     </ul>
                 </div>
                 <div class="">
-                    <a class="btn bg-primary-color text-white text-xl font-bold">Login</a>
+                    <a class="btn bg-primary-color text-white text-xl font-bold hidden md:flex">Login</a>
                 </div>
             </div>
         </nav>
         <!-- navbar  -->
         <!-- banner part  -->
-        <div class="carousel w-full h-[calc(100vh-7rem)] mt-8">
-            <div id="slide1" class="carousel-item relative w-full bg-[#e76f514d] rounded-xl">
+        <div class="carousel w-full h-[calc(70vh-5rem)] md:h-[calc(100vh-7rem)] md:mt-8 mt-0 ">
+            <div id="slide1" class="carousel-item relative w-full bg-[#e76f514d] md:rounded-xl">
                 <!-- banner slide 1 content  -->
-                <div class="p-24 flex justify-between items-center font-poppins">
+                <div class="md:p-24 p-8 flex md:justify-between items-center flex-col md:flex-row font-poppins">
                     <!-- banner left text  -->
-                    <div class="w-1/2">
-                        <h1 class="text-6xl	font-bold text-dark-1 leading-[75px]">Ride-on R15 V4 with Smile</h1>
-                        <p class="text-base font-light text-[#000000d8] leading-7 mt-3 mb-6 pr-24">Amet minim mollit non
+                    <div class="md:w-1/2">
+                        <h1 class="md:text-6xl	text-2xl leading-8  font-bold text-dark-1 md:leading-[75px]">Ride-on R15
+                            V4 with Smile</h1>
+                        <p class="text-base font-light text-[#000000d8] leading-7 mt-3 mb-6 md:pr-24">Amet minim mollit
+                            non
                             deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
                             mollit.</p>
                         <a class="btn bg-primary-color text-white text-xl font-bold">Purchase</a>
                     </div>
                     <!-- banner left text  -->
                     <!-- banner right img  -->
-                    <div class="w-1/2">
+                    <div class="md:w-1/2">
                         <img src="./assets/images/bike1.png" alt="" srcset="" class="w-full">
                     </div>
                     <!-- banner right img  -->
@@ -100,18 +103,20 @@
             <!-- slide 2 -->
             <div id="slide2" class="carousel-item relative w-full bg-[#e76f514d] rounded-xl">
                 <!-- banner slide 1 content  -->
-                <div class="p-24 flex justify-between items-center font-poppins">
+                <div class="md:p-24 p-8 flex md:justify-between items-center flex-col md:flex-row font-poppins">
                     <!-- banner left text  -->
-                    <div class="w-1/2">
-                        <h1 class="text-6xl	font-bold text-dark-1 leading-[75px]">Ride-on R15 V4 with Smile</h1>
-                        <p class="text-base font-light text-[#000000d8] leading-7 mt-3 mb-6 pr-24">Amet minim mollit non
+                    <div class="md:w-1/2">
+                        <h1 class="md:text-6xl	text-2xl leading-8  font-bold text-dark-1 md:leading-[75px]">Ride-on R15
+                            V4 with Smile</h1>
+                        <p class="text-base font-light text-[#000000d8] leading-7 mt-3 mb-6 md:pr-24">Amet minim mollit
+                            non
                             deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
                             mollit.</p>
                         <a class="btn bg-primary-color text-white text-xl font-bold">Purchase</a>
                     </div>
                     <!-- banner left text  -->
                     <!-- banner right img  -->
-                    <div class="w-1/2">
+                    <div class="md:w-1/2">
                         <img src="./assets/images/bike2.png" alt="" srcset="" class="w-full">
                     </div>
                     <!-- banner right img  -->
@@ -128,18 +133,20 @@
             <!-- slide 3 -->
             <div id="slide3" class="carousel-item relative w-full bg-[#e76f514d] rounded-xl">
                 <!-- banner slide 3 content  -->
-                <div class="p-24 flex justify-between items-center font-poppins">
+                <div class="md:p-24 p-8 flex md:justify-between items-center flex-col md:flex-row font-poppins">
                     <!-- banner left text  -->
-                    <div class="w-1/2">
-                        <h1 class="text-6xl	font-bold text-dark-1 leading-[75px]">Ride-on R15 V4 with Smile</h1>
-                        <p class="text-base font-light text-[#000000d8] leading-7 mt-3 mb-6 pr-24">Amet minim mollit non
+                    <div class="md:w-1/2">
+                        <h1 class="md:text-6xl	text-2xl leading-8  font-bold text-dark-1 md:leading-[75px]">Ride-on R15
+                            V4 with Smile</h1>
+                        <p class="text-base font-light text-[#000000d8] leading-7 mt-3 mb-6 md:pr-24">Amet minim mollit
+                            non
                             deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
                             mollit.</p>
                         <a class="btn bg-primary-color text-white text-xl font-bold">Purchase</a>
                     </div>
                     <!-- banner left text  -->
                     <!-- banner right img  -->
-                    <div class="w-1/2">
+                    <div class="md:w-1/2">
                         <img src="./assets/images/bike3.png" alt="" srcset="" class="w-full">
                     </div>
                     <!-- banner right img  -->
@@ -157,12 +164,12 @@
     </header>
     <!-- header part start  -->
     <!-- main part  -->
-    <main class="mt-[169px] md:container md:mx-auto font-poppins">
+    <main class="mt-[30px] md:mt-[169px] md:container md:mx-auto font-poppins">
         <!-- Fetured bikes  -->
         <section>
             <!-- section top  -->
             <div class="text-center">
-                <h1 class="text-5xl	text-dark-1 font-semibold mb-2">Fetured Bikes In This Year</h1>
+                <h1 class="md:text-5xl text-3xl	text-dark-1 font-semibold mb-2">Fetured Bikes In This Year</h1>
                 <p
                     class="text-sm w-full font-poppins font-semibold text-[#E76F51] relative before:content-[''] before:absolute before:left-[calc(50%-29px)]  before:right-auto  before:w-[58.5px] before:h-[1px] before:bg-[#E76F51] before:top-5 rounded-[1px]">
                     Best bike collection</p>
@@ -184,10 +191,10 @@
         </section>
         <!-- Fetured bikes  -->
         <!-- latest News  -->
-        <section class="mt-[130px] mx-3 md:mx-0">
+        <section class="mt-[30px] md:mt-[130px] mx-3 md:mx-0">
             <!-- section top  -->
             <div class="text-center">
-                <h1 class="text-5xl	text-dark-1 font-semibold mb-2 capitalize">latest News</h1>
+                <h1 class="md:text-5xl text-3xl	text-dark-1 font-semibold md:mb-2 mb-1 capitalize">latest News</h1>
             </div>
             <!-- section top  -->
             <!-- latest card  -->
@@ -247,10 +254,11 @@
         </section>
         <!-- latest News  -->
         <!-- happy client section  -->
-        <section class="mt-[130px] mx-3 md:mx-0 font-poppins">
+        <section class="mt-[70px] md:mt-[130px] mx-3 md:max-w-[1054px] md:mx-auto font-poppins">
             <!-- section top  -->
             <div class="text-center">
-                <h1 class="text-5xl	text-[#0A0826] font-semibold mb-2">Happy <span class="text-[#E76F51]">Clients
+                <h1 class="md:text-5xl text-3xl	text-[#0A0826] font-semibold mb-2">Happy <span
+                        class="text-[#E76F51]">Clients
                         says</span></h1>
             </div>
             <!-- section top  -->
@@ -342,15 +350,16 @@
         </section>
         <!-- happy client section  -->
         <!-- Frequently Asked Questions -->
-        <section class="mt-[130px] mx-3 md:mx-0">
+        <section class="mt-[70px] md:mt-[130px] mx-3 md:mx-0">
             <!-- section top  -->
             <div class="text-center">
-                <h1 class="text-5xl	text-[#0A0826] font-semibold mb-2">Frequently Asked<span class="text-[#E76F51]">
+                <h1 class="md:text-5xl text-3xl	text-[#0A0826] font-semibold mb-2">Frequently Asked<span
+                        class="text-[#E76F51]">
                         Questions</span></h1>
             </div>
             <!-- section top  -->
             <!-- frequently content  -->
-            <div class="mt-12 w-full flex justify-center items-start flex-col md:flex-row gap-24">
+            <div class="mt-12 w-full flex justify-center items-start flex-col md:flex-row md:gap-24 gap-12 ">
                 <!-- left img  -->
                 <div class="md:w-1/2 w-full flex justify-center items-center">
                     <img src="./assets/images/faq.png" alt="" srcset="" class="max-w-full">
